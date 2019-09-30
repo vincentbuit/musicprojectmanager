@@ -65,5 +65,9 @@ log)
     shift;
     flp_log "$@"
     ;;
+*)
+    echo "Error: invalid command $1" >&2
+    exit 1
+    ;;
 esac
 
